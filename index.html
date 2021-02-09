@@ -5,21 +5,103 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Milu's Portfolio</title>
 
-        <link rel="stylesheet" href="./index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,400;1,700&family=Kosugi&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="./index.css" />
         <script src="./jquery.js"></script>
+        <script src="./ScrollTrigger.min.js"></script>
     </head>
     <body>
         <section id="fade"></section>
         <section id="top">
-            <div>
-                <h1>aaa</h1>
+            <div class="top-text">
+                <h1>Milu's Portfolio</h1>
+                <p>I creating TypographyAnimation</p>
             </div>
         </section>
-
+        <section id="about">
+            <h1 data-trigger>Who is me?</h1>
+            <img src="./logo.png" alt="Logo" class="logo-img" data-trigger>
+            <h1 data-trigger>Milu/<span style="font-family: 'Kosugi', sans-serif;">ミル</span></h1>
+            <p data-trigger>
+                個人映像クリエイター。タイポグラフィアニメーションを中心に様々な技術を勉強中。
+            </p>
+            <p data-trigger>
+                使用ソフトはAfterEffects / Blender / AviUtlです。
+            </p>
+        </section>
+        <section id="works">
+            <div class="works-text">
+                <h1 data-trigger>What I doing?</h1>
+                <p data-trigger>
+                    直近の制作物を掲載しています。
+                </p>
+            </div>
+            <div class="works-content" data-trigger>
+                <img src="https://i.gyazo.com/e1a2bc07689590cc2015ce2fc87872b7.jpg" class="works-img">
+                <div class="works-desc">
+                    <div class="works-desc-child">
+                        <h1>妄想感傷代償連盟</h1>
+                        <p>自主制作</p>
+                    </div>
+                </div>
+            </div>
+            <div class="works-content" data-trigger>
+                <img src="https://i.gyazo.com/e1a2bc07689590cc2015ce2fc87872b7.jpg" class="works-img">
+                <div class="works-desc">
+                    <div class="works-desc-child">
+                        <h1>妄想感傷代償連盟</h1>
+                        <p>自主制作</p>
+                    </div>
+                </div>
+            </div>
+            <div class="works-content" data-trigger>
+                <img src="https://i.gyazo.com/e1a2bc07689590cc2015ce2fc87872b7.jpg" class="works-img">
+                <div class="works-desc">
+                    <div class="works-desc-child">
+                        <h1>妄想感傷代償連盟</h1>
+                        <p>自主制作</p>
+                    </div>
+                </div>
+            </div>
+            <div class="works-content" data-trigger>
+                <img src="https://i.gyazo.com/e1a2bc07689590cc2015ce2fc87872b7.jpg" class="works-img">
+                <div class="works-desc">
+                    <div class="works-desc-child">
+                        <h1>妄想感傷代償連盟</h1>
+                        <p>自主制作</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <script>
-            $(window).on('load', function(){
-                $('#fade').fadeOut(800);
-            })
+            $(window).on("load", function () {
+                $("#fade").fadeOut(800);
+                $(".top-text").addClass("top-text-animation");
+            });
+
+            const trigger = new ScrollTrigger.default({
+                once: true,
+                offset: {
+                    element: {
+                        x: 0,
+                        y: (trigger, rect, direction) => {
+                            return 0.6;
+                        },
+                    },
+                    viewport: {
+                        x: 0,
+                        y: (trigger, frame, direction) => {
+                            return trigger.visible ? 0 : 0.6;
+                        },
+                    },
+                },
+            });
+            trigger.add("[data-trigger]");
         </script>
     </body>
 </html>
