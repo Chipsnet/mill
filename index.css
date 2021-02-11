@@ -184,5 +184,18 @@ h1, h2, h3, h4, h5, h6, a, p {
 #contact a {
     font-family: 'Kosugi', sans-serif;
     text-decoration: none;
-    color: aquamarine;
+    color: rgb(188, 217, 255);
+}
+
+.button {
+    font-family: 'Josefin Sans', sans-serif !important;
+    color: white !important;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color: white !important;
 }
