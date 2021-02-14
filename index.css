@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 .works-img {
     width: 400px;
     margin: 0 10px;
+    height: auto;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -189,6 +190,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     .works-img {
         width: 340px;
         margin: 0 10px;
+        height: 191.25px;
     }
 }
 
