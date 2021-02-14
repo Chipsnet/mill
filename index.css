@@ -48,10 +48,6 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-size: 2em;
 }
 
-
-@media all and (min-width: 1024px) and (max-width: 1280px) { 
-}
- 
 @media all and (min-width: 768px) and (max-width: 1024px) {
     .top-text h1 {
         font-size: 3em;
@@ -84,7 +80,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 #about {
     text-align: center;
-    padding: 10% 0px;
+    padding: 10% 2%;
 }
 
 #about h1 {
@@ -109,6 +105,26 @@ h1, h2, h3, h4, h5, h6, a, p {
 #works {
     padding: 10% 20%;
 }
+
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #works {
+        padding: 10% 20%;
+    }
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    #works {
+        padding: 10% 20%;
+    }
+ }
+ 
+@media all and (max-width: 480px) {
+    #works {
+        padding: 10% 2%;
+    }
+}
+
 
 .works-text {
     text-align: center;
@@ -149,6 +165,27 @@ h1, h2, h3, h4, h5, h6, a, p {
     margin: 0 10px;
 }
 
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .works-img {
+        width: 400px;
+        margin: 0 10px;
+    }
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .works-img {
+        width: 400px;
+        margin: 0 10px;
+    }
+ }
+ 
+@media all and (max-width: 480px) {
+    .works-img {
+        width: 340px;
+        margin: 0 10px;
+    }
+}
+
 .works-desc {
     margin: 0 10px;
     display: flex;
@@ -164,6 +201,26 @@ h1, h2, h3, h4, h5, h6, a, p {
     color: white;
     font-size: 2em;
     margin: 10px 0;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .works-img {
+        width: 400px;
+        margin: 0 10px;
+    }
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .works-img {
+        width: 400px;
+        margin: 0 10px;
+    }
+ }
+ 
+@media all and (max-width: 480px) {
+    .works-desc h1 {
+        font-size: 1.4em;
+    }
 }
 
 .works-desc p {
@@ -200,7 +257,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 #contact {
     text-align: center;
-    padding: 10% 0px;
+    padding: 10% 2%;
 }
 
 #contact h1 {
@@ -208,6 +265,26 @@ h1, h2, h3, h4, h5, h6, a, p {
     color: white;
     font-family: 'Josefin Sans', sans-serif;
     margin: 50px 0;
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .works-img {
+        width: 400px;
+        margin: 0 10px;
+    }
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .works-img {
+        width: 400px;
+        margin: 0 10px;
+    }
+ }
+ 
+@media all and (max-width: 480px) {
+    #contact h1 {
+        font-size: 2em;
+    }    
 }
 
 #contact p {
