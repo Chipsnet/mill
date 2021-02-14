@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 5em;
     font-style: italic;
+    font-weight: 700;
 }
 
 .top-text p {
@@ -90,6 +91,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-family: 'Josefin Sans', sans-serif;
     margin: 50px 0;
     font-style: italic;
+    font-weight: 700;
 }
 
 #about p {
@@ -138,6 +140,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-family: 'Josefin Sans', sans-serif;
     margin: 50px 0;
     font-style: italic;
+    font-weight: 700;
 }
 
 .works-link p, a {
@@ -252,6 +255,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-family: 'Josefin Sans', sans-serif;
     color: white;
     font-style: italic;
+    font-weight: 400;
 }
 
 #footer a {
@@ -270,6 +274,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     font-family: 'Josefin Sans', sans-serif;
     margin: 50px 0;
     font-style: italic;
+    font-weight: 700;
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
@@ -312,6 +317,7 @@ h1, h2, h3, h4, h5, h6, a, p {
     border-radius: 5px;
     padding: 10px 20px;
     font-style: italic;
+    font-weight: 400;
 }
 
 .button:hover {
